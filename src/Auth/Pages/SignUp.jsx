@@ -29,16 +29,19 @@ export const SignUp = () => {
                   gap={ 3 }
                >
                   <TextField
+                     autoComplete="off"
                      label="Fullname"
                      fullWidth 
                      required type="text" placeholder="Nombre de usuario"/>
 
                   <TextField
+                     autoComplete="off"
                      label="Email"
                      fullWidth 
                      required type="text" placeholder="Correo electronico"/>
 
                   <TextField 
+                     autoComplete="off"
                      label="Password"
                      fullWidth
                      required type="password" placeholder="Contraseña"/>

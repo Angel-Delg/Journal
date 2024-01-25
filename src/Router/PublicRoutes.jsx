@@ -1,10 +1,9 @@
-import { useContext } from 'react'
 import { Outlet, Navigate } from 'react-router-dom'
-import { AuthContext } from '../Auth/Context/AuthProvider'
+import { useSelector } from 'react-redux'
 
 export const PublicRoutes = () => {
-   const logged = useContext(AuthContext)
-   return !logged 
+   const { isAuthenticated } = useSelector(state => state.Authentication)
+   return !isAuthenticated 
    ? <Outlet />
    : <Navigate to="dashboard" />
 }

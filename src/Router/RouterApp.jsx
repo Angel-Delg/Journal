@@ -16,7 +16,7 @@ export const RouterApp = () => {
                }
             />
          </Route>
-
+         
          {/* Routes to Dashboard */}
          <Route path="/dashboard" element={<PrivateRoutes />}>
             <Route path="/dashboard/" element={ <Home /> } />
